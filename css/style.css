@@ -12,9 +12,7 @@ body{
 main{
     width: 100%;
 }
-.menu-button-container, .menu-toggle, input[type="checkbox"]{
-    display: none;
-}
+
 .anchor-button{
     display: flex;
     justify-content: space-evenly;
@@ -545,23 +543,7 @@ footer img{
     .top-nav ul li a{
         font-size: 20px;
     }
-    .menu-button-container i{
-        color: white;
-    }
-    .menu-button-container, .menu-toggle, input[type="checkbox"]{
-        display: block;
-    }
-    #menu-toggle{
-        position: absolute;
-        left: -999999999px;
-      }
-      .menu li{
-          display: none;
-      }
-    #menu-toggle:checked ~ .menu li{
-        display: block;
-    }
-
+ 
 
     /* Home Area */
     .home-area{
