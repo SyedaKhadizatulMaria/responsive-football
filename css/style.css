@@ -12,6 +12,9 @@ body{
 main{
     width: 100%;
 }
+.menu-button-container, .menu-toggle, input[type="checkbox"]{
+    display: none;
+}
 .anchor-button{
     display: flex;
     justify-content: space-evenly;
@@ -328,7 +331,7 @@ footer img{
 /* Footer Styles End */
 
 
-/* Responsive for Laptop screen */
+/* Responsive for Laptop, larger tablets in landscape or smaller desktops (769-1160px screen) */
 @media only screen and (min-width: 769px) and (max-width: 1160px) {
   /* Top Nav */
     .top-nav{
@@ -402,7 +405,7 @@ footer img{
     }
     
 }
-/* Responsive for Tablet screen */
+/* Responsive for Tablet & larger smartphones (481-768px screen) */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     .anchor-button{
         width: 90px;
@@ -513,9 +516,9 @@ footer img{
         width: 40%;
     }
 }
-/* Responsive for Mobile screen */
+/* Responsive for Mobilephone or Smaller smartphone (0-480) */
 @media only screen and (max-width: 480px) {
-    
+
     .anchor-button{
         width: 80px;
         height: 30px;
@@ -540,8 +543,26 @@ footer img{
         margin-right: 0px;
     }
     .top-nav ul li a{
-        font-size: 10px;
+        font-size: 20px;
     }
+    .menu-button-container i{
+        color: white;
+    }
+    .menu-button-container, .menu-toggle, input[type="checkbox"]{
+        display: block;
+    }
+    #menu-toggle{
+        position: absolute;
+        left: -999999999px;
+      }
+      .menu li{
+          display: none;
+      }
+    #menu-toggle:checked ~ .menu li{
+        display: block;
+    }
+
+
     /* Home Area */
     .home-area{
         width: 90%;
