@@ -56,7 +56,13 @@ header{
     color: white;
     font-size: 16px;
 }
-
+.menu-list label i{
+    color: white;
+    display: none;
+}
+input[type="checkbox"]{
+    visibility: hidden;
+}
 /* Top Nav End */
 .btn-animation{
     transition:  0.4s ease;
@@ -539,11 +545,21 @@ footer img{
     }
     .top-nav ul li{
         margin-right: 0px;
+        display: none;
     }
     .top-nav ul li a{
         font-size: 20px;
     }
- 
+    .menu-list label i{
+        color: white;
+        display: block;
+    }
+    input[type="checkbox"]{
+        visibility: hidden;
+    }
+    input:checked ~ ul li{
+        display: block;
+    }
 
     /* Home Area */
     .home-area{
